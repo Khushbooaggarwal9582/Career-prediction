@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Path Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cyber-bg-container">
+        <div class="bg-image-layer"></div>
+        <div class="glow-overlay"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <div class="main-content-wrapper">
+        
+        <section class="app-section active-page" id="landing-page-view">
+            <div class="landing-content">
+                <div class="badge-new">
+                    <span class="pulse-dot"></span> Powered by Next-Gen Neural Network Inference
+                </div>
+                <h1>Decode Your Future With <br><span class="highlight-text">Precision AI</span></h1>
+                <p>Skip the guesswork. Leverage deep machine learning algorithms to instantly map your core academic foundation, technical capabilities, and professional interests to the perfect high-growth career path.</p>
+                
+                <div class="cta-group">
+                    <button id="start-btn" class="btn-primary-glow">
+                        Start Free Assessment
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <a href="#how-it-works" class="btn-link">Explore Neural Pipeline</a>
+                </div>
+            </div>
+
+            <div class="features-grid" id="how-it-works">
+                <div class="feature-card">
+                    <div class="icon-wrapper">📊</div>
+                    <h3>Data Driven Insights</h3>
+                    <p>Trained on thousands of real-world multi-industry engineering and professional placement matrices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">⚡</div>
+                    <h3>Real-Time Inference</h3>
+                    <p>Direct communication pipeline connected straight to your running Python ML model architecture.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">🎯</div>
+                    <h3>Granular Mapping</h3>
+                    <p>Delivers highly accurate specialized designations rather than broad generic fields.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-section app-container" id="assessment-page-view">
+            <header class="section-header">
+                <h2>Neural Matrix Profile Input</h2>
+                <p>Input your academic and behavioral vectors to initiate model calculation.</p>
+            </header>
+
+            <main class="card-container">
+                <div id="form-content-area">
+                    <form id="career-form">
+                        <div class="input-group">
+                            <label for="education">Highest Education Level</label>
+                            <select id="education" required>
+                                <option value="" disabled selected>Select your degree layer...</option>
+                                <option value="12th">12th Standard</option>
+                                <option value="BA">B.A. (Bachelor of Arts)</option>
+                                <option value="BCA">B.C.A. (Computer Applications)</option>
+                                <option value="B.Com">B.Com (Bachelor of Commerce)</option>
+                                <option value="B.Tech">B.Tech (Bachelor of Technology)</option>
+                                <option value="M.Sc">M.Sc (Master of Science)</option>
+                                <option value="MBA">M.B.A. (Master of Business Admin)</option>
+                                <option value="MBBS">M.B.B.S.</option>
+                                <option value="M.Tech">M.Tech (Master of Technology)</option>
+                                <option value="M.Ed">M.Ed (Master of Education)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="specialization">Domain Specialization</label>
+                            <select id="specialization" required>
+                                <option value="" disabled selected>Select your domain focus...</option>
+                                <option value="Commerce">Commerce / Accountancy</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Computer Science">Computer Science / IT</option>
+                                <option value="Computer Applications">Computer Applications</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Political Science">Political Science</option>
+                                <option value="English">English Literature</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Medicine">Medicine & Surgery</option>
+                                <option value="Administration">Administration</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="skills">Primary Technical/Core Skills</label>
+                            <select id="skills" required>
+                                <option value="" disabled selected>Select your primary tool capability...</option>
+                                <option value="Python, Web Development, Databases">Python, Web Development, Databases</option>
+                                <option value="Python, MATLAB, CAD">Python, MATLAB, CAD</option>
+                                <option value="Communication, Tax Filing">Communication, Tax Filing</option>
+                                <option value="Leadership, Strategy, Analytics">Leadership, Strategy, Analytics</option>
+                                <option value="Writing, Communication">Writing, Communication</option>
+                                <option value="Research, Data Collection">Research, Data Collection</option>
+                                <option value="Diagnosis, Surgery, Patient Care">Diagnosis, Surgery, Patient Care</option>
+                                <option value="Design Optimization">Design Optimization</option>
+                                <option value="Typing, Customer Handling">Typing, Customer Handling</option>
+                                <option value="Assessment Design">Assessment Design</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="interests">Primary Field of Interest</label>
+                            <select id="interests" required>
+                                <option value="" disabled selected>Select your deep personal interest...</option>
+                                <option value="Technology">Technology & Coding</option>
+                                <option value="Management">Management & Leadership</option>
+                                <option value="Social Work">Social Work & Community Service</option>
+                                <option value="Research">Research & Analytics</option>
+                                <option value="Design">Creative & UI/UX Design</option>
+                                <option value="Creativity">Artistic Creativity</option>
+                                <option value="Teaching">Education & Mentorship</option>
+                                <option value="Healthcare">Health & Medical Sciences</option>
+                                <option value="Helping People">Human Services / Helping People</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Compute Trajectory Matrix
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div id="form-loader-area" class="loader-wrapper">
+                    <div class="spinner-box">
+                        <div class="circle-core"></div>
+                    </div>
+                    <h3>Running ML Model Inference...</h3>
+                    <p>Analyzing weights through the trained neural pipeline network.</p>
+                </div>
+            </main>
+        </section>
+
+        <section class="app-section app-container" id="result-page-view">
+            <main class="card-container result-card">
+                <div class="success-glow-effect"></div>
+                <div id="result-icon" class="success-icon">🎯</div>
+                <h2 id="result-heading">Optimal Vector Matched</h2>
+
+                <p class="category-label">Predicted Field: <span id="category-output">--</span></p>
+
+                <div id="predictions-list" class="predictions-list">
+                <!-- top-3 cards get inserted here by JavaScript -->
+                </div>
+
+                <div class="result-details">
+                    <h3>Classification Report Metrics</h3>
+                    <p id="career-description">Synthesizing comprehensive cluster insights...</p>
+                </div>
+
+                <button id="reset-btn" class="btn-secondary">Re-evaluate Profile Vectors</button>
+            </main>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
