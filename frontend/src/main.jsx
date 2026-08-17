@@ -23,7 +23,7 @@ import {
 import './styles.css'
 import careerHero from './career_hero.png'
 
-const API_URL = 'http://127.0.0.1:5000'
+const API_URL = ''
 
 const educationOptions = [
   ['12th', '12th Standard'],

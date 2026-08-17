@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 import pandas as pd
 import os
@@ -78,7 +78,15 @@ def build_roadmap(career):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return send_from_directory("frontend/dist", "index.html")
+@app.route("/<path:path>")
+def serve_react(path):
+    file_path = os.path.join("frontend", "dist", path)
+
+    if os.path.exists(file_path):
+        return send_from_directory("frontend/dist", path)
+
+    return send_from_directory("frontend/dist", "index.html")
 
 
 @app.route("/predict", methods=["POST"])
